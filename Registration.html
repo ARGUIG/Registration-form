@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>E-teacher</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Registration.css">
+    </head>
+
+    <body>
+        <div class="sign-up">
+            <img src="eteach.png">
+            <p>Please fill out this form with the required information to start learning</p>
+            <form method="post" action='https://www.linkedin.com/in/amine-arguig/'>
+                <fieldset>
+                    <label for="name">Enter your full Name<input id="name" required type="text" placeholder="Full Name"/></label>
+                    <label for="mail">Enter your Email<input id="mail" required type="text" placeholder="Email"/></label>
+                    <label for="password">Enter your password<input id="password" required type="password" pattern="[a-z0-5]{8,}" placeholder="password"/></label>
+                </fieldset>
+                <fieldset>
+                    <label for="photo">Upload a profile picture:<input id="photo" type="file" required/></label>
+                    <label for="age">Input your age (years):<input id="age" type="number" min=1" max="100" required/></label>
+                    <label for="select">How did you hear about us?
+                        <select id="referer">
+                            <option value="">select one</option>
+                            <option value="1">E-teacher's instagram page</option>
+                            <option value="2">E-teacher's facebook page</option>
+                            <option value="3">E-teacher's Youtube chanel</option>
+                            <option value="4">by a friend</option>
+                        </select>
+                    </label>
+                    <label for="bio">Provide a bio
+                        <textarea id="bio" rows="3" cols="30" placeholder="I am in my first year at.."></textarea>
+                    </label>
+                </fieldset>
+                <fieldset >What do you want to learn?
+                    <label for="math"><input class="inline" type="checkbox" />math</label>
+                    <label for="Physiscs"><input class="inline" type="checkbox" />Physics</label>
+                    <label for="language"><input class="inline" type="checkbox" />language</label>
+                    <label for="conditions"><input class="inline" type="radio" required/>I accept the terms and <b>conditions</b></label>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+            
+
+        </div>
+
+    </body>
+
+</html>
